@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Prime Power Modulus
 ---
 
@@ -15,14 +15,14 @@ $$
 $$
 
 **Example.** 2 is a primitive root mod 5 because for every $ a $ coprime with 5,
-there is a power $ 2^z $ s.t. $ a \equiv 2^z \mod n. $
+there is a power $ 2^z $ s.t. $ a \equiv 2^z \mod 5. $
 
-**Definition.** *Define the order $ | a | $ of $ a $ to be the smallest
+**Definition.** *Define the order $ |a| $ of $ a $ to be the smallest
 integer z s.t. $ a $ is a $ z $-th root of $ 1 \mod n $, i.e.*
 
 $$
     a^z \equiv 1 \mod n.
 $$
 
-**Corollary.** *A number $ a $ is a primitive root of $ n $ iff $ | a | =
+**Corollary.** *A number $ a $ is a primitive root of $ n $ iff $ |a| =
 \f(n). $*
