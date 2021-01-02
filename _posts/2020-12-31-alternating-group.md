@@ -17,7 +17,7 @@ A lot like bubble sort and its parallelized sibling even-odd sort.
 ![](/poij/assets/Bubble-sort-example-300px.gif)
 ![](/poij/assets/Odd_even_sort_animation.gif)
 
-**Definition.** *Let $ s \in S_n $ act on the polynomial*
+**Definition.** *Let $ \s \in S_n $ act on the polynomial*
 
 $$
   \D = \prod_{1\leq i < j \leq n} (x_i - x_j)
