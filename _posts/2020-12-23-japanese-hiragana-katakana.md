@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Japanese Practice
+title: Hiragana and Katakana
 ---
 
 |  | A | I | U | E | O

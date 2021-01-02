@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<style>
+  table#post-list, #post-list td, #post-list tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+  }
+</style>
+
 <div class="home">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
@@ -10,21 +20,15 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <ol style="list-style-type: none;">
+    <table id="post-list">
       {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ post.date | date: date_format }}. <a href="{{ post.url | relative_url }}">
-          {{ post.title | smartify | escape }}
-        </a>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+      <tr>
+        {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
+        <td style="text-align: right; vertical-align: top; width: 30%;">{{ post.date | date: date_format }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td><a href="{{ post.url | relative_url }}">{{ post.title | smartify | escape }}</a></td>
+      </tr>
       {%- endfor -%}
-    </ol>
-
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
+    </table>
   {%- endif -%}
 
 </div>

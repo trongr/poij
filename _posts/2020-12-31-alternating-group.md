@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Alternating Group An
+title: Alternating Group A_n
 ---
 
 **Definition.** *A 2-cycle is called a **transposition.***
