@@ -23,8 +23,8 @@ layout: default
     <table id="post-list">
       {%- for post in site.posts -%}
       <tr>
-        {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
-        <td style="text-align: right; vertical-align: top; width: 30%;">{{ post.date | date: date_format }}&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        {%- assign date_format = site.minima.date_format | default: "%a %-d %b %Y" -%}
+        <td style="text-align: right; vertical-align: top; width: 30%;">{{ post.date | date: date_format }}&nbsp;&nbsp;</td>
         <td><a href="{{ post.url | relative_url }}">{{ post.title | smartify | escape }}</a></td>
       </tr>
       {%- endfor -%}

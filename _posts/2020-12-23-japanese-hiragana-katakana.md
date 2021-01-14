@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hiragana and Katakana
+title: ひらがなとカタカナ
 ---
 
 |  | A | I | U | E | O
